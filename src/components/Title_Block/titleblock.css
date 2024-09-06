@@ -1,0 +1,7 @@
+.block__title p{
+    background-color: var(--green);
+}
+
+.block__subtitle{
+    max-width: 580px;
+}
