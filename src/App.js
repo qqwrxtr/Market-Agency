@@ -4,6 +4,7 @@ import Header from "components/Header/Header";
 import Publicity from "components/Publicity/Publicity";
 import Services from "components/Services/Services";
 import ShowCompany from "components/ShowCompany/ShowCompany";
+import WorkProcess from "components/WorkProcess/WorkProcess";
 
 function App(props) {
   return (
@@ -17,6 +18,7 @@ function App(props) {
          <Services cardInfo = {props.cardInfo}/>
          <Publicity/>
          <CaseStud/>
+         <WorkProcess/>
       </main>
     </div>
   );
