@@ -1,4 +1,4 @@
-import Title_Block from "components/Title_Block/Title_Block";
+import Title_Block from "components/Title_Block/Title_Block.jsx";
 import "./Services.css";
 import ServicesCard from "./ServicesCard/ServicesCard";
 

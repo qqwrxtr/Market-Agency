@@ -28,6 +28,7 @@ const Publicity = () => {
         <img
           src={publicity__ilustration}
           className="absolute right-0 bottom-0"
+          alt="publicity__ilustration"
           style={{ width: "auto", height: "110%" }}
         />
       </div>
