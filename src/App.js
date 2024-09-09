@@ -18,7 +18,7 @@ function App(props) {
          <Services cardInfo = {props.cardInfo}/>
          <Publicity/>
          <CaseStud/>
-         <WorkProcess/>
+         <WorkProcess steps = {props.steps}/>
       </main>
     </div>
   );

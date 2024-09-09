@@ -8,7 +8,7 @@ import store from './store/store.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App cardInfo={store.cardInfo} />
+    <App cardInfo={store.cardInfo} steps={store.steps} />
   </React.StrictMode>
 );
 

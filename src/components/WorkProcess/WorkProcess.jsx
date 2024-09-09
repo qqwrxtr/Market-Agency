@@ -2,7 +2,7 @@ import Title_Block from "components/Title_Block/Title_Block";
 import "./WorkProcess.css"
 import WorkSteps from "./WorkSteps/WorkSteps.jsx"
 
-const WorkProcess = () => {
+const WorkProcess = (props) => {
     return (
         <>
             <div className="container pt-36">
@@ -12,7 +12,7 @@ const WorkProcess = () => {
             </div>
             <div className="container">
                 <div className="row">
-                    <WorkSteps/>
+                    <WorkSteps steps = {props.steps}/>
                 </div>
             </div>
         </>
