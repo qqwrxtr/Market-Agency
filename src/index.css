@@ -9,6 +9,11 @@
   --gray: #F3F3F3;
 }
 
+input:focus {
+  border-color: var(--green);
+  outline: none;
+}
+
 
 body {
   margin: 0;
@@ -29,7 +34,7 @@ code {
 }
 
 .border-1{
-  border: 1px solid black;
+  border: 1px solid ;
 }
 
 .text-p{

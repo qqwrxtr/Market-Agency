@@ -9,7 +9,7 @@ const Testimonials = ({ testimonials }) => {
   const testimonialsArray = Object.values(testimonials);
 
   return (
-    <div className="container mx-auto mt-24 mb-52">
+    <div className="container mx-auto mt-36">
         <Title_Block
           title="Testimonials"
           subtitle="Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services"
@@ -24,7 +24,7 @@ const Testimonials = ({ testimonials }) => {
           }}
           pagination={{ clickable: true }}
           spaceBetween={70}
-          slidesPerView={2}
+          slidesPerView={1}
           loop={true}
           className="swiper-container flex overflow-hidden"
         >

@@ -6,6 +6,7 @@ import Services from "components/Services/Services";
 import ShowCompany from "components/ShowCompany/ShowCompany";
 import WorkProcess from "components/WorkProcess/WorkProcess";
 import Testimonials from "components/Testimonials/Testimonials"
+import Footer from "components/Footer/Footer";
 
 function App(props) {
   return (
@@ -22,6 +23,9 @@ function App(props) {
          <WorkProcess steps = {props.steps}/>
          <Testimonials testimonials={props.testimonials}/>
       </main>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   );
 }
