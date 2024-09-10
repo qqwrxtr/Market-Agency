@@ -5,7 +5,11 @@ import card4__img from "assets/img/card4.png"
 import card5__img from "assets/img/card5.png"
 import card6__img from "assets/img/card6.png"
 
+const emails = [];
+
+
 const store = {
+    emails,
     cardInfo: {
         card1: {
             title: "Search engine",
@@ -122,7 +126,6 @@ const store = {
           position: "Chief Behavioral Scientist, The Team W"
         }
       }
-      
 };
 
 export default store;

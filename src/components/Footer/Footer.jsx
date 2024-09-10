@@ -1,32 +1,47 @@
-import { useState } from 'react';
-import axios from 'axios';
-import footer__logo from 'assets/img/bubble__inactive.svg';
+import React, { useState } from "react";
+import footer__logo from "assets/img/bubble__inactive.svg";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Footer = () => {
-  const [email, setEmail] = useState('');
-  const [notification, setNotification] = useState({ message: '', type: '' });
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (!email || !/\S+@\S+\.\S+/.test(email)) {
-      setNotification({ message: 'Please enter a valid email.', type: 'error' });
-      return;
-    }
-
-    try {
-        const response = await axios.post('https://fetch-email-app.vercel.app/api/subscribe', { email });
-        setNotification({ message: response.data.message, type: 'success' });
-      setEmail('');
-    } catch (error) {
-      setNotification({ message: 'Failed to subscribe. Please try again.', type: 'error' });
+    if (email.trim()) {
+      try {
+        const response = await axios.post(`${process.env.REACT_APP_API_URL}/submit-email`, {
+            email,
+          });          
+        setMessage(response.data.message);
+        setEmail("");
+        toast.success("Successfully subscribed!", {
+          position: "bottom-right",
+        });
+      } catch (error) {
+        console.error("Error submitting email:", error);
+        setMessage("Error submitting email");
+        toast.error("Failed to subscribe. Try again later.", {
+          position: "bottom-right",
+        });
+      }
+    } else {
+      toast.warn("Please enter a valid email!", {
+        position: "bottom-right",
+      });
     }
   };
 
   return (
     <div
       className="container mt-36 bg-[var(--dark)] text-white px-14 py-12"
-      style={{ borderTopLeftRadius: '47px', borderTopRightRadius: '47px' }}
+      style={{ borderTopLeftRadius: "47px", borderTopRightRadius: "47px" }}
     >
       <div className="row">
         <div className="header__logo flex items-center justify-between">
@@ -100,47 +115,40 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="footer__sub__news px-10 py-11 bg-[#292A32] h-full rounded-3xl flex items-center gap-7">
-            <form onSubmit={handleSubmit} className="w-full flex gap-7 items-center">
-              <div className="sub__news__input">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email"
-                  className="w-full h-12 rounded-md bg-[#292A32] text-white p-3 placeholder:text-white italic border border-white"
-                />
-              </div>
-              <div className="sub__news__submit">
-                <button
-                  type="submit"
-                  className="bg-[var(--green)] text-black rounded-md p-3 w-full h-12 text-xl flex items-center justify-center px-10"
-                >
-                  Subscribe to news
-                </button>
-              </div>
-            </form>
-          </div>
+          <form
+            className="footer__sub__news px-10 py-11 bg-[#292A32] h-full rounded-3xl flex items-center gap-7"
+            onSubmit={handleSubmit}
+          >
+            <div className="sub__news__input">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                value={email}
+                onChange={handleEmailChange}
+                className="w-full h-12 rounded-md bg-[#292A32] text-white p-3 placeholder:text-white italic border border-white py-9"
+              />
+            </div>
+            <div className="sub__news__submit">
+              <button
+                type="submit"
+                className="bg-[var(--green)] text-black rounded-md p-3 w-full h-12 text-xl py-9 flex items-center justify-center px-10 "
+              >
+                Subscribe to news
+              </button>
+            </div>
+          </form>
         </div>
         <div className="footer__line mt-12">
           <div
             className="vr w-full bg-white rounded-full"
-            style={{ height: '1px' }}
+            style={{ height: "1px" }}
           ></div>
         </div>
         <div className="footer__copyrights mt-12">
           <p className="text-lg">&copy; 2023 Positivus. All rights reserved.</p>
         </div>
       </div>
-      {notification.message && (
-        <div
-          className={`mt-4 p-3 rounded-md ${
-            notification.type === 'success' ? 'bg-green-500' : 'bg-red-500'
-          } text-white`}
-        >
-          {notification.message}
-        </div>
-      )}
+      <ToastContainer />
     </div>
   );
 };
