@@ -1,0 +1,11 @@
+@media only screen and (max-width:360px){
+    .publicity__title{
+        font-size: 16px;
+    }
+    .publicity__subtitle{
+        font-size: 14px;
+    }
+    .button__styled{
+        font-size: 12px;
+    }
+}

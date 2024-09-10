@@ -43,13 +43,13 @@ const ServicesCard = (props) => {
             <div className="info_block_card">
               <div className="text">
                 <p
-                  className="text-2xl font-semibold w-fit px-3 rounded-lg"
+                  className="text-2xl font-semibold w-fit px-3 rounded-lg block__title" 
                   style={{ backgroundColor: colorType.textbg }}
                 >
                   {card.title}
                 </p>
                 <p
-                  className="text-2xl font-semibold w-fit px-3 rounded-lg"
+                  className="text-2xl font-semibold w-fit px-3 rounded-lg block__subtitle"
                   style={{ backgroundColor: colorType.textbg }}
                 >
                   {card.subtitle}
@@ -83,7 +83,7 @@ const ServicesCard = (props) => {
                 </button>
               </div>
             </div>
-            <div className="img_service_card">
+            <div className="img_service_card ">
               <img
                 src={card.img}
                 alt={card.title}

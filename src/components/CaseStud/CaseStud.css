@@ -1,0 +1,5 @@
+@media only screen and (max-width:390px) {
+    .text__block__cases p{
+        font-size: 14px !important; 
+    }
+}

@@ -23,7 +23,7 @@ const Header = () => {
                 className="h-8"
                 alt="Flowbite Logo"
               />
-              <span className="self-center text-4xl font-semibold whitespace-nowrap dark:text-black">
+              <span className="self-center text-2xl sm:text-4xl font-semibold whitespace-nowrap dark:text-black">
                 Positivus
               </span>
             </a>

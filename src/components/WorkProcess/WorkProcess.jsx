@@ -5,7 +5,7 @@ import WorkSteps from "./WorkSteps/WorkSteps.jsx"
 const WorkProcess = (props) => {
     return (
         <>
-            <div className="container pt-36">
+            <div className="container pt-20 md:pt-36">
                 <div className="row">
                     <Title_Block title="Our Working Process" subtitle="Step-by-Step Guide to Achieving Your Business Goals" />
                 </div>
