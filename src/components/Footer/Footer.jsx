@@ -56,27 +56,27 @@ const Footer = () => {
           <div className="footer_links ">
             <ul className="flex gap-6 underline-offset-8">
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#about" className="hover:underline">
                   About
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#services" className="hover:underline">
                   Services
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#use_cases" className="hover:underline">
                   Use Cases
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#pricing" className="hover:underline">
                   Pricing
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#blog" className="hover:underline">
                   Blog
                 </a>
               </li>

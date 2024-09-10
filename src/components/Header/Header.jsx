@@ -54,11 +54,11 @@ const Header = () => {
             </button>
 
             <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-              <ul className="font-medium text-xl flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white ">
+              <ul className="font-medium text-xl flex flex-col p-3 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white ">
                 <li>
                   <a
                     href="#"
-                    className="block py-2 px-3 text-gray-900 hover:text-green-600"
+                    className="block text-gray-900 hover:text-green-600"
                   >
                     About Us
                   </a>
@@ -66,7 +66,7 @@ const Header = () => {
                 <li>
                   <a
                     href="#"
-                    className="block py-2 px-3 text-gray-900 hover:text-green-600"
+                    className="block text-gray-900 hover:text-green-600"
                   >
                     Services
                   </a>
@@ -74,7 +74,7 @@ const Header = () => {
                 <li>
                   <a
                     href="#"
-                    className="block py-2 px-3 text-gray-900 hover:text-green-600"
+                    className="block text-gray-900 hover:text-green-600"
                   >
                     Use Cases
                   </a>
@@ -82,15 +82,7 @@ const Header = () => {
                 <li>
                   <a
                     href="#"
-                    className="block py-2 px-3 text-gray-900 hover:text-green-600"
-                  >
-                    Pricing
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="block py-2 px-3 text-gray-900 hover:text-green-600"
+                    className="block text-gray-900 hover:text-green-600"
                   >
                     Blog
                   </a>
@@ -106,11 +98,11 @@ const Header = () => {
             <div className="p-4">
               <button
                 onClick={toggleMenu}
-                className="text-white focus:outline-none text-lg"
+                className="text-white focus:outline-none text-lg w-6 h-6"
               >
-                &times;
+                <span className="text-3xl">&times;</span>
               </button>
-              <ul className="mt-8 space-y-4">
+              <ul className="mt-8 space-y-4 text-2xl text-center">
                 <li>
                   <a href="#" className="text-white">
                     Home
