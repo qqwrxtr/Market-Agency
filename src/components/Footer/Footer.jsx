@@ -15,8 +15,8 @@ const Footer = () => {
     }
 
     try {
-      const response = await axios.post('https://fetch-email-app.vercel.app/', { email });
-      setNotification({ message: response.data.message, type: 'success' });
+        const response = await axios.post('http://localhost:4000/api/subscribe', { email });
+        setNotification({ message: response.data.message, type: 'success' });
       setEmail('');
     } catch (error) {
       setNotification({ message: 'Failed to subscribe. Please try again.', type: 'error' });
