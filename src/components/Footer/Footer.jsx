@@ -15,7 +15,7 @@ const Footer = () => {
     }
 
     try {
-        const response = await axios.post('http://localhost:4000/api/subscribe', { email });
+        const response = await axios.post('https://fetch-email-app.vercel.app/api/subscribe', { email });
         setNotification({ message: response.data.message, type: 'success' });
       setEmail('');
     } catch (error) {
