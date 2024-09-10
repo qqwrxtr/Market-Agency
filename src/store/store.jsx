@@ -75,7 +75,54 @@ const store = {
           subtitle:
             'Our team is committed to continual improvement, always refining strategies and techniques to keep your business ahead of the competition.',
         },
+      },
+      history: {
+        history1: {
+          id: 1,
+          text: "For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.",
+        },
+        history2: {
+          id: 2,
+          text: "For a B2B software company, we developed an SEO strategy that resulted in a first-page ranking for key keywords and a 200% increase in organic traffic.",
+        },
+        history3: {
+          id: 3,
+          text: "For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.",
+        },
+      },
+      testimonials: {
+        testimonial1: {
+          id: 1,
+          text: "Working with Positivus has transformed our user experience. Their innovative approach and attention to detail have significantly improved our website's usability.",
+          name: "Jared Spool",
+          position: "Founder, User Interface Engineering"
+        },
+        testimonial2: {
+          id: 2,
+          text: "Positivus helped us create a seamless customer journey that has increased our engagement metrics dramatically. Their deep understanding of UX design principles is impressive.",
+          name: "Don Norman",
+          position: "Co-founder, Nielsen Norman Group"
+        },
+        testimonial3: {
+          id: 3,
+          text: "The team at Positivus provided us with a fresh perspective on UX design, which resulted in a more intuitive and user-friendly interface. Their expertise is second to none.",
+          name: "Aarron Walter",
+          position: "VP of Design Education, InVision"
+        },
+        testimonial4: {
+          id: 4,
+          text: "Positivus was instrumental in overhauling our digital platforms, enhancing both aesthetics and functionality. Their dedication to the user experience is unmatched.",
+          name: "Alan Cooper",
+          position: "Co-founder, Cooper"
+        },
+        testimonial5: {
+          id: 5,
+          text: "Partnering with Positivus has been a game-changer for us. Their UX strategies have led to increased customer satisfaction and retention rates.",
+          name: "Susan Weinschenk",
+          position: "Chief Behavioral Scientist, The Team W"
+        }
       }
+      
 };
 
 export default store;

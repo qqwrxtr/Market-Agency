@@ -5,6 +5,7 @@ import Publicity from "components/Publicity/Publicity";
 import Services from "components/Services/Services";
 import ShowCompany from "components/ShowCompany/ShowCompany";
 import WorkProcess from "components/WorkProcess/WorkProcess";
+import Testimonials from "components/Testimonials/Testimonials"
 
 function App(props) {
   return (
@@ -17,8 +18,9 @@ function App(props) {
          <ShowCompany/>
          <Services cardInfo = {props.cardInfo}/>
          <Publicity/>
-         <CaseStud/>
+         <CaseStud history = {props.history} />
          <WorkProcess steps = {props.steps}/>
+         <Testimonials testimonials={props.testimonials}/>
       </main>
     </div>
   );

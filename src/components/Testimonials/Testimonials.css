@@ -1,0 +1,26 @@
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  margin: 0 5px;
+  background: url('./../../assets/img/bubble__inactive.svg') no-repeat center center;
+  background-size: cover;
+  display: block;
+}
+
+.swiper-pagination-bullet-active {
+  background: url('./../../assets/img/bubble__active.svg') no-repeat center center;
+  background-size: cover;
+}
+
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+
+.swiper-button-next , .swiper-button-prev{
+  display: none;
+}
+
