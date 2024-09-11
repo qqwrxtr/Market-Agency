@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import footer__logo from "assets/img/bubble__inactive.svg";
-import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import "./Footer.css"
+import { collection, addDoc } from 'firebase/firestore';
+import { db } from './../../firebase.js';
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -17,10 +18,9 @@ const Footer = () => {
     e.preventDefault();
     if (email.trim()) {
       try {
-        const response = await axios.post(`${process.env.REACT_APP_API_URL}/submit-email`, {
-            email,
-          });          
-        setMessage(response.data.message);
+        await addDoc(collection(db, "emails"), { email });
+  
+        setMessage("Successfully subscribed!");
         setEmail("");
         toast.success("Successfully subscribed!", {
           position: "bottom-right",
