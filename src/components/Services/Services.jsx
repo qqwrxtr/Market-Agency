@@ -5,7 +5,7 @@ import ServicesCard from "./ServicesCard/ServicesCard";
 const Services = (props) => {
   return (
     <>
-      <div className="container pt-20 md:pt-36 w-full ">
+      <div className="container pt-20 md:pt-36 w-full" id="services">
         <Title_Block title = "Services" subtitle = "At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:"/>
       </div>
       <div className="container pt-5 md:pt-20">

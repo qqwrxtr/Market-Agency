@@ -57,28 +57,23 @@ const Footer = () => {
           <div className="footer_links mt-5 md:mt-0">
             <ul className="flex gap-6 underline-offset-8">
               <li>
-                <a href="#about" className="hover:underline">
-                  About
-                </a>
-              </li>
-              <li>
                 <a href="#services" className="hover:underline">
                   Services
                 </a>
               </li>
               <li>
-                <a href="#use_cases" className="hover:underline">
-                  Use Cases
+                <a href="#case__studies" className="hover:underline">
+                  Case`s
                 </a>
               </li>
               <li>
-                <a href="#pricing" className="hover:underline">
-                  Pricing
+                <a href="#work__process" className="hover:underline">
+                  Work Process
                 </a>
               </li>
               <li>
-                <a href="#blog" className="hover:underline">
-                  Blog
+                <a href="#testimonials" className="hover:underline">
+                  Testimonials
                 </a>
               </li>
             </ul>
@@ -126,7 +121,7 @@ const Footer = () => {
                 placeholder="Enter your email"
                 value={email}
                 onChange={handleEmailChange}
-                className="w-full h-8 xl:h-12 rounded-md bg-[#292A32] placeholder-base md:placeholder-lg lg:placeholder-xl placeholder: text-white p-3 placeholder:text-white italic border border-white py-6 md:py-7 xl:py-9"
+                className="w-full h-8 xl:h-12 rounded-md bg-[#292A32] placeholder:text-base md:placeholder-lg lg:placeholder-xl text-white p-3 placeholder:text-white italic border border-white py-6 md:py-7 xl:py-9"
               />
             </div>
             <div className="sub__news__submit">

@@ -5,7 +5,7 @@ import "./CaseStud.css"
 const CaseStud = (props) => {
   return (
     <>
-      <div className="container pt-20 md:pt-36">
+      <div className="container pt-20 md:pt-36" id="case__studies">
         <Title_Block
           title="Case Studies"
           subtitle="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"

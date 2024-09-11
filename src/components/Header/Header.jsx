@@ -57,15 +57,7 @@ const Header = () => {
               <ul className="font-medium text-xl flex flex-col p-3 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white ">
                 <li>
                   <a
-                    href="#"
-                    className="block text-gray-900 hover:text-green-600"
-                  >
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
+                    href="#services"
                     className="block text-gray-900 hover:text-green-600"
                   >
                     Services
@@ -73,18 +65,26 @@ const Header = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#case__studies"
                     className="block text-gray-900 hover:text-green-600"
                   >
-                    Use Cases
+                    Case`s
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#work__process"
                     className="block text-gray-900 hover:text-green-600"
                   >
-                    Blog
+                    Work Process
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#testimonials"
+                    className="block text-gray-900 hover:text-green-600"
+                  >
+                    Testimonials
                   </a>
                 </li>
               </ul>

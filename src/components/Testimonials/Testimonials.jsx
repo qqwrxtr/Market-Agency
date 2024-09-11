@@ -9,7 +9,7 @@ const Testimonials = ({ testimonials }) => {
   const testimonialsArray = Object.values(testimonials);
 
   return (
-    <div className="container mx-auto mt-20 md:mt-36">
+    <div className="container mx-auto mt-20 md:mt-36" id="testimonials">
         <Title_Block
           title="Testimonials"
           subtitle="Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services"
