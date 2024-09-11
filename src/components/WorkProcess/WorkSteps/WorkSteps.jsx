@@ -15,7 +15,7 @@ const WorkSteps = ({ steps }) => {
       {Object.values(steps).map((step) => (
         <div
           key={step.id}
-          className={`work__step__item border-1 shadow-[0px_5px_0px_#191A23] rounded-3xl p-4 pt-9 sm:p-9 ${
+          className={`work__step__item border-1 shadow-[0px_5px_0px_#191A23] rounded-3xl sm:p-5 p-3 ${
             activeStep === step.id ? 'bg-[var(--green)]' : 'bg-white'
           }`}
         >
@@ -52,13 +52,13 @@ const WorkSteps = ({ steps }) => {
                 />
                 <motion.div
                   key={`${step.id}-content`}
-                  className="work__step__subtitle p-4 rounded-b-lg"
+                  className="work__step__subtitle p-2 md:p-4 rounded-b-lg"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0, transition: { duration: 0 } }}
                   transition={{ duration: 0.3 }}
                 >
-                  <p className="subtitle__work__process">{step.subtitle}</p>
+                  <p className="subtitle__work__process md:text-base text-sm">{step.subtitle}</p>
                 </motion.div>
               </>
             )}

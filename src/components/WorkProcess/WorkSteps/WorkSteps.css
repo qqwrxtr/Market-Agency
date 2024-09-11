@@ -1,5 +1,17 @@
 @media only screen and (max-width:768px) {
-    .subtitle__work__process{
-        font-size: 14px;
+    .work__step__subtitle p{
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .work__step__subtitle p{
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .work__step__subtitle p{
+        font-size: 12px !important;
     }
 }

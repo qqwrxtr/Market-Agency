@@ -10,7 +10,7 @@ import Footer from "components/Footer/Footer";
 
 function App(props) {
   return (
-    <div className="bg-white 2xl:px-44 xl:px-24 sm:px-8 px-5">
+    <div className="bg-white 2xl:px-44 xl:px-24 sm:px-8 px-2">
       <header className="w-full flex justify-center">
         <Header />
       </header>
@@ -23,9 +23,9 @@ function App(props) {
          <WorkProcess steps = {props.steps}/>
          <Testimonials testimonials={props.testimonials}/>
       </main>
-      {/* <footer>
+      <footer>
         <Footer/>
-      </footer> */}
+      </footer>
     </div>
   );
 }
