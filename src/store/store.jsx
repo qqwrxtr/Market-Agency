@@ -47,7 +47,7 @@ const store = {
           id: '01',
           title: 'Consultation',
           subtitle:
-            'During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.',
+            'During the initial consultation, we`ll discuss your business goals, target audience, and current marketing efforts to better understand your needs and tailor our services accordingly.',
         },
         step2: {
           id: '02',
