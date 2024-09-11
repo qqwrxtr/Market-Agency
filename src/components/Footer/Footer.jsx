@@ -121,7 +121,7 @@ const Footer = () => {
                 placeholder="Enter your email"
                 value={email}
                 onChange={handleEmailChange}
-                className="w-full h-8 xl:h-12 rounded-md bg-[#292A32] placeholder:text-base md:placeholder-lg lg:placeholder-xl text-white p-3 placeholder:text-white italic border border-white py-6 md:py-7 xl:py-9"
+                className="w-full h-8 xl:h-12 rounded-md bg-[#292A32] placeholder:text-base md:placeholder-lg text-white p-3 placeholder:text-white italic border border-white py-6 md:py-7 xl:py-9"
               />
             </div>
             <div className="sub__news__submit">
